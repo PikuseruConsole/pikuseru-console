@@ -10,7 +10,7 @@ path = "src/main.rs"
 [dependencies]
 log = "0.4"
 env_logger= "0.10.0"
-pikuseru = { version = "*", default-features = false }
+pikuseru = { git = "https://github.com/PikuseruConsole/pikuseru.git", version = "*", default-features = false }
 
 hashbrown = { version = "0.12.3", features = ["serde"] }
 
