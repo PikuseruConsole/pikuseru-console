@@ -11,7 +11,7 @@
 
 <!-- PROJECT LOGO -->
 <p align="center">
-  <img src="pikuseru.png">
+  <img src="pikuseru.gif">
 </p>
 
 <!-- ABOUT THE PROJECT -->
