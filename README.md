@@ -37,7 +37,7 @@ A 256x256 [ghostmark python](https://github.com/PikuseruConsole/pikuseru-example
 
 <img src="docs/ghostmark.gif" width="320">
 
-A sand game with a custom window (286x286) in WASM (RUST):
+A [sand game](https://github.com/PikuseruConsole/Sable) with a custom window (286x286) in WASM (RUST):
 
 <img src="docs/sable.gif" width="320">
 

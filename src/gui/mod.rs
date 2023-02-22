@@ -61,7 +61,7 @@ impl Gui {
         gilrs: &mut Gilrs,
     ) {
         let mut is_open = self.window_open;
-        egui::Window::new("Main Menu")
+        egui::Window::new("Pikuseru Console")
             .open(&mut is_open)
             .collapsible(false)
             .show(ctx, |ui| {
