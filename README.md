@@ -7,7 +7,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Github Link][github badge]][github link]
-[![Travis Link][travis badge]][travis link]
+[![CI Status][ci badge]][ci link]
 
 <!-- PROJECT LOGO -->
 <p align="center">
@@ -55,5 +55,5 @@ cargo build --release --features=pikuseru/cpython,pikuseru/rlua,pikuseru/image
 
 [github badge]: https://img.shields.io/badge/github-pikuseruconsole/pikuseruconsole-8da0cb?style=for-the-badge&logo=github
 [github link]: https://github.com/PikuseruConsole/pikuseru-console
-[travis badge]: https://app.travis-ci.com/PikuseruConsole/pikuseru-console.svg?branch=master
-[travis link]: https://travis-ci.com/PikuseruConsole/pikuseru-console
+[ci link]: https://github.com/PikuseruConsole/pikuseru-console/actions
+[ci badge]: https://img.shields.io/github/actions/workflow/status/PikuseruConsole/pikuseru-console/rust.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white
