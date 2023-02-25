@@ -10,21 +10,17 @@ use network::SessionDescriptor;
 use pikuseru;
 
 use crate::input::{LocalInputManager, MouseEventCollector, LocalPlayerId};
-
 use crate::{
     gui::{framework::Framework, Gui},
 };
 
 use ggrs::{GGRSRequest, GGRSError, P2PSession, SessionState, Config};
-
 use env_logger;
-
 use std::{
     time::{Duration, Instant},
     env,
     sync::{Arc, Mutex}
 };
-
 use pixels::{Pixels, SurfaceTexture};
 use winit::{
     dpi::LogicalSize,
@@ -34,8 +30,8 @@ use winit::{
 };
 use winit_input_helper::WinitInputHelper;
 use winit::{dpi::PhysicalPosition, window::CursorGrabMode};
-
 use gilrs::Gilrs;
+use chrono::Local;
 
 pub trait Console: Sized + Config {
     fn update(&mut self);
@@ -355,12 +351,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
                     // Screenshot mode !
                     if input.key_pressed(VirtualKeyCode::F3) {
-                        console.take_screenshot("screenshot.png");
+                        let dt = Local::now();
+                        let mut filename = "screenshot-".to_string();
+                        filename.push_str(&dt.format("%Y-%m-%d-%H-%M-%S.png").to_string());
+                        console.take_screenshot(&filename);
                     }
 
                     // Record mode !
                     if input.key_pressed(VirtualKeyCode::F4) {
-                        console.start_record("output.gif");
+                        let dt = Local::now();
+                        let mut filename = "record-".to_string();
+                        filename.push_str(&dt.format("%Y-%m-%d-%H-%M-%S.gif").to_string());
+                        console.start_record(&filename);
                     }
 
                     times.update();

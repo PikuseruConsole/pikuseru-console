@@ -25,6 +25,7 @@ egui = { version = "0.19.0" }
 egui_wgpu_backend = "0.20.0"
 egui-winit = {version = "0.19.0", default-features = false, features = ["links"]}
 
+chrono = "0.4.23"
 
 # Serialization / File Loading etc
 serde = { version = "1.0.144", features = ["derive"] }
