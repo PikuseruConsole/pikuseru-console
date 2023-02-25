@@ -107,14 +107,14 @@ impl Gui {
                 ui.horizontal(|ui| {
                     let launch_game = Button::new(launch_game_text);
                     if ui
-                        .add_enabled(self.game_file.is_some(), launch_game)
+                        .add_enabled(self.game_file.is_some() && session.is_none(), launch_game)
                         .clicked()
                     {
                         // Launch the game !
                         *session = self.try_launch_game(pixels, window);
                     }
 
-                    let buttons_enabled = self.game_file.is_some();
+                    let buttons_enabled = self.game_file.is_some() && !session.is_none();
 
                     // Reset the game
                     if ui
