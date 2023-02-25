@@ -26,10 +26,12 @@
 <img src="docs/ui.png" width="320">
 <img src="docs/ui-2.png" width="320">
 
-A [demo API](https://github.com/PikuseruConsole/pikuseru-examples/tree/master/demo/API/api_py.pik) cartridge:
+A [demo API](https://github.com/PikuseruConsole/pikuseru-examples/tree/master/demos/API/api_py.pik) cartridge:
+
 <img src="docs/demo_api.gif" width="320">
 
 Some classic 128x128 game:
+
 <img src="docs/dino.gif" width="320">
 <img src="docs/ski.gif" width="320">
 
